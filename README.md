@@ -14,3 +14,5 @@ This Project is based on cloning Tradex - Business WordPress Theme - as a part o
 - Home
 - Contact
 
+### The Original Theme Website : https://digitaltemplatemarket.com/wp/tradex-premium/
+
