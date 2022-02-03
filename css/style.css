@@ -1,0 +1,511 @@
+/* .cus stands for custom (to differentiate between bootstrap classes and my custome classes) */
+
+/*_______Global Variables To Customise our color theme later______*/
+
+:root {
+    --primaryColor: #0C65ED;
+    --PrimaryColorTransparent:#0C65EDC2;
+}
+
+/*___________________________General custom classes__________________________*/
+.cus-bg-color {
+    background-color: var(--primaryColor);
+}
+.cus-text-color{
+    color: var(--primaryColor);
+}
+.cus-transition {
+    transition: .5s;
+}
+.cus-py-7 {
+    padding: 5rem 0;
+}
+.cus-fs-11 {
+    font-size: 11px;
+    font-weight: 500;
+}
+img.thumb {
+    width: 100%;
+    height: 60px;
+}
+.cus-img-shadow {
+    filter: drop-shadow(-6px 0px 3mm gray);
+}
+/*____________________________________________ Header ____________________________________________*/
+
+header {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cus-py-5 {
+    padding: 5px 0;;
+}
+
+nav,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+header i {
+    padding-right: 1rem;
+}
+
+
+/*____________________________________________ nav ____________________________________________*/
+
+nav {
+    box-shadow: -2px 2px 12px 0px #000000a3;
+    z-index: 9999999 !important;
+}
+
+nav li:hover .dropdown-menu.cus-show {
+    border-top: 3px solid var(--primaryColor);
+    border-radius: 0;
+    display: block;
+}
+
+
+nav .navbar-nav>li:hover>a,
+.our-work a:hover {
+    color: var(--primaryColor) !important;
+}
+
+.cus-dropdown li {
+    padding: .5rem 0;
+}
+
+.cus-carousel-height {
+    height: 100vh;
+}
+
+.cus-full-height {
+    height: 100%;
+}
+
+.cus-z-index {
+    z-index: 99;
+}
+
+
+/*________________________________ carousol Section __________________________________*/
+
+.carousel-item.zero-slide {
+    background-image: url(/images/ecommerce-cover-2.jpg);
+    background-size: cover;
+}
+.carousel-item.first-slide {
+    background-image: url(/images/slider1.jpg);
+    background-size: cover;
+}
+
+.carousel-item.second-slide {
+    background-image: url(/images/slider2.jpg);
+    background-size: cover;
+}
+
+.carousel-item.third-slide {
+    background-image: url(/images/slider3.jpg);
+    background-size: cover;
+}
+
+.cus-overlay {
+    background-color: #000000d4;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    color: white;
+}
+
+.carousel-indicators button.cus-shape {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 2px solid white;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.carousel-indicators .active {
+    transform: scale(1.5) !important;
+    background-color: transparent !important;
+}
+
+/*________________________________ Title style For All Sections __________________________________*/
+
+.cus-title-style {
+    height: 8px;
+    border-bottom: 2px solid var(--primaryColor);
+    width: 60px;
+}
+
+.cus-title-style>div {
+    width: 50%;
+    border-top: 2px solid var(--primaryColor) ;
+}
+
+.sec-title p {
+    padding:0 12%;
+}
+
+
+/*________________________________ about-us Section __________________________________*/
+
+.about-us-main i {
+    width:20%;
+}
+
+.about-us .card p {
+    font-size: 15px;
+}
+
+.cus-position div:hover h5,
+.cus-position div:hover i {
+    color: var(--primaryColor)
+}
+
+.about-us-footer i {
+    color:var(--primaryColor);
+    padding: 7% 0;
+    width: 25%;
+    text-align: center;
+}
+
+/*________________________________ Our-services Section __________________________________*/
+
+.our-services {
+    background-image: url(/images/service-bg.jpg);
+    background-attachment: fixed;
+}
+
+.our-services .cus-hover:hover>div {
+    top: 0 !important;
+    opacity: 1 !important;
+}
+
+/*_____________________________________ our-work Section ________________________________________*/
+
+.our-work .card:hover {
+    box-shadow: 0 0rem 1rem  3px rgba(0,0,0,.175)!important;
+}
+
+.our-work .card>div{
+    bottom: 0;
+    width: 90%;
+    margin: 5%;
+    background-color: var(--PrimaryColorTransparent) !important;
+    transition: .5s;
+    transform: rotateY(90deg);
+    padding: 4% 5%;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.our-work .card:hover>div{
+    transform: translateY(0);
+}
+
+
+.our-work .card {
+    transition: .5s;
+}
+
+/*_____________________________________ our-creative team Section ________________________________________*/
+
+.our-creative-team .cus-card>div {
+    bottom: -168px;
+    transition: .5s;
+    box-shadow: 0px 5px 15px 3px grey;
+}
+
+.our-creative-team .card .icons {
+    transition-delay: 1s;
+}
+
+.our-creative-team .cus-card:hover>div {
+    bottom: 0;
+}
+
+.our-creative-team .cus-card:hover>div .cus-div {
+    padding-bottom: 0 !important;
+    border: none !important;
+}
+
+/*_____________________________________ our-Pricing Section ________________________________________*/
+
+
+.our-pricing .card-group .card h1+hr {
+    width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 2px;
+    border: none;
+    background-color: var(--primaryColor);
+}
+
+
+/*_____________________________________ latest-blog Section ________________________________________*/
+
+.latest-blog .card .cus-icons {
+    width: 15%;
+    padding: 5% 3%;
+    background-color: black;
+    color: white;
+    height: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+.latest-blog .card .cus-icons i {
+    transition: .5s;
+}
+
+.latest-blog .card:hover .cus-icons {
+    background-color: var(--primaryColor);
+}
+.latest-blog .card .cus-icons i:hover {
+    opacity: .6;
+}
+.latest-blog .card .card-body h5:hover,
+.latest-blog .card .card-body small span:hover {
+    color: var(--primaryColor);
+    cursor: pointer!important;
+}
+
+.latest-blog .card .card-body h6:hover i {
+    transform: translate(10px, 0px);
+}
+.latest-blog .card .card-body h6:hover {
+    cursor: pointer;
+}
+
+.latest-blog .progress {
+    height: 2px;
+}
+
+.latest-blog .card:hover .progress-bar {
+    width: 100% !important;
+}
+.latest-blog .card img{
+    transition: 1s;
+}
+.latest-blog .card:hover img{
+    transform: scale(1.3) rotate(5deg);
+}
+
+/*_____________________________________ testimonal Section ________________________________________*/
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background:transparent;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.owl-theme .owl-nav [class*=owl-] i:hover {
+    background-color: black;
+}
+
+
+/*_____________________________________ Footer  ________________________________________*/
+
+footer h2+hr {
+    width: 20%;
+    border: 0;
+    background-color: var(--primaryColor) !important;
+    height: 2px !important;
+    opacity: 1;
+} 
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2% 0 0 0;
+}
+
+footer ul li {
+    margin: 7% 0 0 0;
+    font-size: 15px;
+}
+
+footer ul li i {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+footer .card {
+    background-color: transparent;
+    border: 0;
+}
+
+footer .card img:hover,
+footer .card h6:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+footer button {
+    border:0;
+    padding: 1% 3%;
+    margin-bottom: 5%;
+    margin-right: 3%;
+    font-size: 13px;
+    transition: .3s;
+}
+footer .btn-white:hover {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+footer+div {
+    box-shadow: 0 -2px 28px -2px black;
+}
+
+ /*__________________________ For The Contact Page______________________ */
+
+section.contact{
+    background-image: url(/images/abt-ban.jpg);
+    height: 400px;
+}
+
+section.contact h1{
+    box-sizing: border-box;
+    text-align: center;
+    padding:150px 0;
+    height: 300px;
+}
+
+section.contact h1+div {
+    height: 100px;
+    background-color: #00000061;
+    box-sizing: border-box;
+}
+
+.top-icon {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 9%;
+    right: 3%;
+    z-index: 9999;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cus-sub-icon {
+    font-size: 8rem;
+    opacity: 0.4;
+    transform: rotate(-40deg);
+    left: 19%;
+}
+
+button.cus-befor {
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+button.cus-befor::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    opacity: .3;
+    width: 35px;
+    height: 91px;
+    transform: rotate(22deg);
+    top: -15px;
+    left: -50px;
+    transition: .5s;
+}
+
+button.cus-befor:hover::before {
+    left: 110%;
+}
+
+form div {
+    position: relative;
+}
+
+form i {
+    position: absolute;
+    padding: .8rem 0 .8rem .3rem;
+}
+
+/*____________________________________________ Media Query____________________________________________*/
+
+@media screen and (min-width: 992px) {
+    .cus-dropdown {
+        min-width: 45rem;
+        transform: translateX(-80%);
+        padding: 0;
+    }
+    .carousel-item h1 {
+        font-weight: 600;
+        font-size: 3rem;
+    }
+    .carousel-item .cus-bottons button {
+        width:12rem;
+    }
+    .carousel-indicators.cus-postion{
+        flex-direction: column;
+        left: auto;
+        top: 5%;
+        right: -9%;
+        }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-item h1 {
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+    .carousel-item .cus-bottons button {
+        width:12rem;
+    }
+
+    .carousel-indicators.cus-postion{
+    flex-direction: column;
+    left: auto;
+    top: 5%;
+    right: -9%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-us .cus-position {
+        z-index: 99999;
+        position: relative;
+        background-color: white;
+        width: 350px;
+    }
+    
+    .cus-w-20rem {
+    width:20rem;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .carousel-item .cus-bottons button {
+        width:7rem;
+        font-size: 12px;
+    }
+
+    .testimonial .card {
+        text-align: center;
+    }
+
+    .testimonial .card img {
+        width:auto !important;
+        margin: 10px auto 0; 
+
+    }
+}
