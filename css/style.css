@@ -95,21 +95,21 @@ nav .navbar-nav>li:hover>a,
 /*________________________________ carousol Section __________________________________*/
 
 .carousel-item.zero-slide {
-    background-image: url(/images/ecommerce-cover-2.jpg);
+    background-image: url(../images/ecommerce-cover-2.jpg);
     background-size: cover;
 }
 .carousel-item.first-slide {
-    background-image: url(/images/slider1.jpg);
+    background-image: url(../images/slider1.jpg);
     background-size: cover;
 }
 
 .carousel-item.second-slide {
-    background-image: url(/images/slider2.jpg);
+    background-image: url(../images/slider2.jpg);
     background-size: cover;
 }
 
 .carousel-item.third-slide {
-    background-image: url(/images/slider3.jpg);
+    background-image: url(../images/slider3.jpg);
     background-size: cover;
 }
 
@@ -180,7 +180,7 @@ nav .navbar-nav>li:hover>a,
 /*________________________________ Our-services Section __________________________________*/
 
 .our-services {
-    background-image: url(/images/service-bg.jpg);
+    background-image: url(../images/service-bg.jpg);
     background-attachment: fixed;
 }
 
@@ -370,7 +370,7 @@ footer+div {
  /*__________________________ For The Contact Page______________________ */
 
 section.contact{
-    background-image: url(/images/abt-ban.jpg);
+    background-image: url(../images/abt-ban.jpg);
     height: 400px;
 }
 
